@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="remove-btn">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="upload-img">
+            <input type="file" class="upload-file" accept="image/*" hidden/>
+            <div class="content-upload-img">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h3>Browse File To Upload</h3>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="change-size">
+                <div class="change-width-size">
+                    <h3>Width (px)</h3>
+                    <input type="number">
+                </div>
+
+                <div class="change-height-size">
+                    <h3>Height (px)</h3>
+                    <input type="number">
+                </div>
+            </div>
+
+            <div class="change-img">
+                <span class="change-img-wrapper">
+                    <input type="checkbox" id="ratio" name="change-img" checked>
+                    <label for="ratio">Lock aspect ratio</label>
+                </span>
+
+                <span class="change-img-wrapper">
+                    <input type="checkbox" id="quality" name="change-img">
+                    <label for="quality">Reduce quality</label>
+                </span>
+            </div>
+
+            <button class="btn-download-img">
+                DOWNLOAD IMAGE
+            </button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
